@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    --text-color: #333; /* Default text color */
+    --background-color: #000000; /* Light gray background */
+    --heading-color: #000; /* Black color for headings */
+    --link-color: #007bff; /* Blue color for links */
+    --paragraph-color: #666; /* Dark gray color for paragraphs */
+    --header-footer-bg-color: #333; /* Dark gray background for header and footer */
+    --header-footer-text-color: #fff; /* White text color for header and footer */
+    --section-title-color: #007bff; /* Blue color for section titles */
+
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+.main {
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+}
+
+.top-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 14px;
+    text-align: center;
+}
+.summary{
+    margin-top: 10px;
+    text-transform: uppercase;
+    padding: 10px 34px;
+}
+.skills,.experience,.education,.projects,.certifications,.hobbies{
+    text-transform: uppercase;
+    padding: 10px 34px;
+}
+.summary p,.skills p{
+    text-transform: lowercase;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: var(--heading-color);
+    margin: 2px;
+}
+h3, h4, h5, h6 {
+    color: var(--text-color);
+    margin: 2px;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+p {
+    color: var(--paragraph-color);
+    margin: 0;
+}
+
+.header, .footer {
+    background-color: var(--header-footer-bg-color);
+    color: var(--header-footer-text-color);
+}
+
+.section-title {
+    color: var(--section-title-color);
+}
+
+@media screen and (min-width: 768px) {
+    .main {
+        width: 720px;
+        min-width: 720px;
+        margin: auto;
+    }
+    
+}
